@@ -1,4 +1,4 @@
-# node-jpegorientation v1.0.0
+# jpegorientation-lwip v1.0.0
 Tool for querying, setting and correcting orientation of JPEG files in node.js.
 
 ## Basic Usage
@@ -17,8 +17,8 @@ Auto Rotate an image:
 
 ```
 var jpeg = require("jpegorientation");
-jpeg.autoRotate("IMG_0001.jpg", function(err) {
-	
+jpeg.autoRotate("IMG_0001.jpg", "dest.jpg", function(err) {
+
 }
 
 ```
@@ -29,7 +29,7 @@ Manually set the Exif data for a files orientation (does not actually rotate, ju
 ```
 var jpeg = require("jpegorientation");
 jpeg.orientation("IMG_0001.jpg", 5, function(err, orientation) {
-	
+
 }
 
 
@@ -40,10 +40,8 @@ jpeg.orientation("IMG_0001.jpg", 5, function(err, orientation) {
 
 ## Installation
 
-    npm install jpegorientation
+    npm install jpegorientation-lwip
 
-This package depends on [Node GM](https://github.com/aheckmann/gm) which requires Graphics Magick to be installed (Most system package managers have GraphicsMagick).  Although ImageMagick can be used with "GM", this module is not implemented to support ImageMagick, only GraphicsMagick.
-    
 ## API Overview
 
 ### Get or Set JPEG orientation EXIF data
@@ -72,5 +70,3 @@ Returns a friendly string describing the orientation.  Return value is position 
 ```
 jpeg.orientationToString(orientationValue);
 ```
-
-

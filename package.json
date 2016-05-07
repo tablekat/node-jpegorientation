@@ -1,42 +1,41 @@
 {
-	"name": "jpegorientation",
-	"description": "Tool for getting, setting and rotating jpeg images based on Exif rotation information",
-	"version": "1.0.2",
-	"author": {
-		"name": "Jeremy Condon",
-		"email": "jeremycondon@gmail.com"
-	},
-	"keywords": [
-		"nodejs",
-		"Rotate",
-		"JPEG",
-		"EXIF",
-		"Auto Rotate",
-		"image",
-		"graphicsmagick",
-		"imagemagick"
-	],
-	"engines": {
-		"node": ">= 0.4.2"
-	},
-	"bugs": {
-		"url": "http://github.com/GritDesign/node-jpegorientation/issues"
-	},
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://www.opensource.org/licenses/mit-license.php"
-		}
-	],
-	"dependencies": {
-		"gm": "1.4.2"
-	},
-	"main": "./index",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/GritDesign/node-jpegorientation.git"
-	},
-	"readmeFilename": "README.md",
-	"_id": "node-jpegorientation@1.0.1",
-	"_from": "node-jpegorientation@1.0.1"
+  "name": "jpegorientation-lwip",
+  "description": "Tool for getting, setting and rotating jpeg images based on Exif rotation information (with LWIP!)",
+  "version": "1.0.3",
+  "author": {
+    "name": "Jeremy Condon",
+    "email": "jeremycondon@gmail.com"
+  },
+  "contributors": {
+    "name": "Kathy Hill",
+    "url": "https://github.com/tablekat"
+  },
+  "keywords": [
+    "nodejs",
+    "Rotate",
+    "JPEG",
+    "EXIF",
+    "Auto Rotate",
+    "image",
+    "LWIP"
+  ],
+  "engines": {
+    "node": ">= 0.4.2"
+  },
+  "bugs": {
+    "url": "https://github.com/tablekat/node-jpegorientation.git/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "dependencies": {
+    "lwip": "0.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tablekat/node-jpegorientation.git"
+  }
 }
